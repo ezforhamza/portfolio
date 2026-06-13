@@ -69,9 +69,16 @@ export default function Contact() {
         >
           <a
             href={`mailto:${EMAIL}`}
-            className="group inline-flex min-h-[52px] items-center gap-3 rounded-full bg-accent px-7 text-base font-medium text-bg transition-opacity duration-200 hover:opacity-90"
+            className="group inline-flex min-h-[52px] max-w-full items-center gap-2.5 rounded-full bg-accent px-5 text-sm font-medium text-bg transition-opacity duration-200 hover:opacity-90 sm:gap-3 sm:px-7 sm:text-base"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden
+              className="shrink-0"
+            >
               <path
                 d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"
                 stroke="currentColor"
@@ -80,11 +87,11 @@ export default function Contact() {
                 strokeLinejoin="round"
               />
             </svg>
-            {EMAIL}
+            <span className="truncate">{EMAIL}</span>
           </a>
 
           {/* Social links */}
-          <div className="mt-2 flex items-center gap-3">
+          <div className="mt-2 flex w-full flex-wrap items-center justify-center gap-2.5 sm:gap-3">
             {SOCIALS.map((s) => (
               <a
                 key={s.slug}
@@ -92,7 +99,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="group inline-flex min-h-[44px] items-center gap-2 rounded-full border border-border bg-surface px-5 text-sm font-medium text-fg-muted transition-colors duration-200 hover:border-accent/40 hover:text-fg"
+                className="group inline-flex min-h-[44px] items-center gap-2 rounded-full border border-border bg-surface px-4 text-sm font-medium text-fg-muted transition-colors duration-200 hover:border-accent/40 hover:text-fg sm:px-5"
               >
                 <TechIcon
                   slug={s.slug}
