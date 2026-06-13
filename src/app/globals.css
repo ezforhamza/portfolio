@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  /* Base — cinematic dark */
+  --color-bg: #0a0a0b;
+  --color-bg-soft: #121214;
+  --color-surface: #18181b;
+  --color-border: #27272a;
+
+  /* Text — brightened for contrast over imagery */
+  --color-fg: #fafafa;
+  --color-fg-muted: #d4d4d8;
+  --color-fg-faint: #a1a1aa;
+
+  /* Accent — warm amber (pulled from the hero) */
+  --color-accent: #f5a623;
+  --color-accent-soft: #f7b955;
+  --color-accent-deep: #c97f12;
+
+  /* Secondary — cool blue (the screens) */
+  --color-cool: #3b82f6;
+
+  /* Upwork green */
+  --color-upwork: #14a800;
+
+  /* Fonts */
+  --font-display: var(--font-display), "Space Grotesk", sans-serif;
+  --font-body: var(--font-body), "Archivo", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Respect reduced motion: disable smooth scroll + heavy animation */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+.font-display {
+  font-family: var(--font-display);
+}

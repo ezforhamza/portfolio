@@ -1,0 +1,37 @@
+export const SITE = {
+  url: "https://ezforhamza.com",
+  name: "Hamza Tanveer",
+  title: "Hamza Tanveer — Full-Stack & Mobile Developer",
+  shortTitle: "Hamza Tanveer",
+  description:
+    "Hamza Tanveer is a full-stack and mobile developer building Flutter apps and AI-powered web platforms — creator of HeyInterests and AIumni. Cross-platform mobile, React/Next.js web, and the backends behind them.",
+  jobTitle: "Full-Stack & Mobile Developer",
+  locality: "Sahiwal",
+  country: "Pakistan",
+  email: "hamzatanveer4347@gmail.com",
+  keywords: [
+    "Hamza Tanveer",
+    "Hamza Tanveer developer",
+    "HeyInterests",
+    "AIumni",
+    "AIumni Network",
+    "Flutter developer",
+    "mobile app developer",
+    "full-stack developer",
+    "React developer",
+    "Next.js developer",
+    "AI app developer",
+    "Pakistan developer",
+    "freelance developer Upwork",
+  ],
+  social: {
+    github: "https://github.com/ezforhamza",
+    upwork: "https://www.upwork.com/freelancers/~014e1746ed64a8ed7d",
+    instagram: "https://www.instagram.com/ezforhamza",
+    linkedin: "https://www.linkedin.com/in/ezforhamza/",
+  },
+  projects: [
+    { name: "HeyInterests", url: "https://heyinterests.com/" },
+    { name: "AIumni", url: "https://aiumni.co/" },
+  ],
+} as const;
