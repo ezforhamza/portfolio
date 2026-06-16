@@ -10,8 +10,8 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const STATS = [
   { value: 11, suffix: "+", label: "Apps in production" },
   { value: 5, suffix: ".0", label: "Upwork rating" },
-  { value: 4, suffix: "+", label: "Years coding" },
-  { value: 2022, suffix: "", label: "Coding since", raw: true },
+  { value: 7, suffix: "+", label: "Years coding" },
+  { value: 2019, suffix: "", label: "Coding since", raw: true },
 ];
 
 const FACTS = [
