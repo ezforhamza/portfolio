@@ -1,0 +1,19 @@
+# Hamza Tanveer
+
+> Full-stack & mobile developer building Flutter apps and AI-powered web platforms. Creator of HeyInterests and AIumni. Based in Sahiwal, Pakistan. Open for freelance work.
+
+## About
+Hamza Tanveer is a full-stack and mobile developer specializing in cross-platform apps with Flutter and AI-powered web platforms built with React, Next.js, and Node.js. 11+ apps in production, 5.0 Upwork rating, coding since 2019. BS Software Engineering, COMSATS University Islamabad.
+
+## Projects
+- [HeyInterests](https://heyinterests.com/): A social platform connecting adults over 140+ shared interests across mobile (Flutter) and web. Real-time group and 1-on-1 chat, smart matching, and AI recommendations.
+- [AIumni](https://aiumni.co/): A professional networking platform for alumni — map-based discovery, social feed, an integrated jobs board, and an AI-personalized "For You" feed. Web, iOS, and Android.
+
+## Stack
+Flutter, Dart, React, Next.js, Node.js, TypeScript, Tailwind CSS, Supabase, Firebase, Expo, OpenAI / LLMs.
+
+## Contact
+- Email: hamzatanveer4347@gmail.com
+- Upwork: https://www.upwork.com/freelancers/~014e1746ed64a8ed7d
+- GitHub: https://github.com/ezforhamza
+- LinkedIn: https://www.linkedin.com/in/ezforhamza/

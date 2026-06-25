@@ -4,11 +4,13 @@ export const SITE = {
   title: "Hamza Tanveer — Full-Stack & Mobile Developer",
   shortTitle: "Hamza Tanveer",
   description:
-    "Hamza Tanveer is a full-stack and mobile developer building Flutter apps and AI-powered web platforms — creator of HeyInterests and AIumni. Cross-platform mobile, React/Next.js web, and the backends behind them.",
+    "Hamza Tanveer — full-stack & mobile developer building Flutter apps and AI-powered web platforms. Creator of HeyInterests & AIumni. Open for freelance work.",
   jobTitle: "Full-Stack & Mobile Developer",
   locality: "Sahiwal",
   country: "Pakistan",
   email: "hamzatanveer4347@gmail.com",
+  university: "COMSATS University Islamabad",
+  updated: "2026-06-25",
   keywords: [
     "Hamza Tanveer",
     "Hamza Tanveer developer",

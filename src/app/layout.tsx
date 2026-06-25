@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Archivo } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -40,14 +40,6 @@ export const metadata: Metadata = {
     title: SITE.title,
     description: SITE.description,
     locale: "en_US",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: SITE.title,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -76,6 +68,11 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#0a0a0b",
+  colorScheme: "dark",
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -85,8 +82,14 @@ const jsonLd = {
       name: SITE.name,
       url: SITE.url,
       image: `${SITE.url}/about-portrait-v2.webp`,
+      description: SITE.description,
       jobTitle: SITE.jobTitle,
       email: `mailto:${SITE.email}`,
+      nationality: { "@type": "Country", name: SITE.country },
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: SITE.university,
+      },
       address: {
         "@type": "PostalAddress",
         addressLocality: SITE.locality,
@@ -116,6 +119,16 @@ const jsonLd = {
       name: SITE.title,
       description: SITE.description,
       publisher: { "@id": `${SITE.url}/#person` },
+      inLanguage: "en",
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${SITE.url}/#profilepage`,
+      url: SITE.url,
+      name: SITE.title,
+      isPartOf: { "@id": `${SITE.url}/#website` },
+      about: { "@id": `${SITE.url}/#person` },
+      primaryImageOfPage: `${SITE.url}/about-portrait-v2.webp`,
       inLanguage: "en",
     },
     ...SITE.projects.map((p) => ({

@@ -132,7 +132,7 @@ export default function ProjectShowcase({ project }: { project: Project }) {
                         fill
                         sizes="(max-width: 1024px) 100vw, 65vw"
                         className="object-contain"
-                        priority={i === 0}
+                        loading="lazy"
                       />
                     </div>
                   </div>
