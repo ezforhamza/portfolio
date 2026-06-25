@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Nav from "@/components/Nav";
 import { SITE } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
@@ -144,6 +145,7 @@ export default function RootLayout({
         <SmoothScroll />
         <Nav />
         {children}
+        <Analytics />
       </body>
     </html>
   );
